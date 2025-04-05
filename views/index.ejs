@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quro Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Qura Post</h1>
+    <% for(post of posts) {%>
+      <div>
+        <h3>@<%=post.username %></h3>
+        <h3><%=post.content %></h3>
+        <a href="http://localhost:5050/posts/<%=post.id%>">see in detail</a>
+        <a href="http://localhost:5050/posts/<%=post.id%>/edit">edit</a>
+        <br>
+        <form action="http://localhost:5050/posts/<%=post.id%>?_method=DELETE" method="post">
+          <button type="submit">Delete Post</button>
+        </form>
+      </div>
+   <% } %>
+    <a href="http://localhost:5050/posts/new">New Post</a>
+</body>
+</html>

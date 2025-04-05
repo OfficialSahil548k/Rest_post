@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    color: blue;
+    background-color: aquamarine;
+}
+
+div{
+    margin: 5px;
+    padding: 3px;
+    border: 2px solid red;
+    width: 300px;
+    height: fit-content;
+}
+
+div h3{
+    color: green;
+    background-color: rgb(205, 245, 146);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(97, 95, 95);
+    border-radius: 5px;
+    background-color: rgb(231, 230, 190);
+}
